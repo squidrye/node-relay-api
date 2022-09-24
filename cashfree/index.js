@@ -1,19 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios");
-const fetchTokenResponse = async()=>{
-    //i'll write it later on if needed , i'll have to figure this out
-}
-
 router.get("/",(req,res)=>{ 
-    console.log(req);
-    const DATA = req.body;
-    console.log(DATA);
-//     const DATA ={
-//     'orderId': '1',
-//     'orderAmount': 200,
-//     'orderCurrency':"INR"
-// }
+const DATA = req.body;
 const HEADER = {
     headers:{
         Accept: 'application/json',
