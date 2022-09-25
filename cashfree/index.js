@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios");
-router.get("/",(req,res)=>{ 
+router.post("/",(req,res)=>{ 
 const DATA = req.body;
 const HEADER = {
     headers:{
